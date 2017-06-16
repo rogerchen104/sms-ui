@@ -11,11 +11,12 @@ function resolve (dir) {
 var config = {
  
     entry: {
-       app: ['./app.js'],
+       app: ['./src/config/app.js','./src/config/css.js'],
        vendor: ['jquery', 'metisMenu','tether','bootstrap','bootstrapToolkit','vue','vuex','vue-router']
     },
     resolve: {
         alias: {
+             
             'jquery': bower_dir + '/jquery/dist/jquery.min.js',
             'metisMenu': bower_dir + '/metisMenu/dist/metisMenu.js',            
             'tether': bower_dir + '/tether/dist/js/tether.min.js',
@@ -28,22 +29,29 @@ var config = {
         }
     },
     output: {
-        path: path.resolve(__dirname, 'output'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].js'
     },
     module: {
         noParse:[],
          rules: [
            
-            // {
-            //     test: /\.vue$/,
-            //     loader: 'vue-loader',
-            //     options: vueLoaderConfig
-            // },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader',
+                options: {
+                loaders: {
+                    css: ExtractTextPlugin.extract({
+                    use: 'css-loader',
+                    fallback: 'vue-style-loader' // <- this is a dep of vue-loader, so no need to explicitly install if using npm3
+                    })
+                }
+                }
+            },
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                include: [resolve('input'), resolve('test')]
+                include: [resolve('src'), resolve('test')]
             },
             {
                 test: /\.(eot|otf|svg|ttf|woff|woff2)(\?\S*)?$/,
