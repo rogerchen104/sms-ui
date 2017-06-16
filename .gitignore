@@ -25,3 +25,7 @@ npm-debug.log
 *.iml
 /dist
 /.env
+
+output/js/*
+output/asset/*
+output/css/*
