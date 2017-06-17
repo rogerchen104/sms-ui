@@ -11,12 +11,14 @@ function resolve (dir) {
 var config = {
  
     entry: {
-       app: ['./src/config/app.js','./src/config/css.js'],
+       app: ['./src/app.js','./src/config/css.js'],
        vendor: ['jquery', 'metisMenu','tether','bootstrap','bootstrapToolkit','vue','vuex','vue-router']
     },
     resolve: {
+        extensions: [".js", ".json",'.vue'],
+
         alias: {
-             
+            '@': resolve('src'),
             'jquery': bower_dir + '/jquery/dist/jquery.min.js',
             'metisMenu': bower_dir + '/metisMenu/dist/metisMenu.js',            
             'tether': bower_dir + '/tether/dist/js/tether.min.js',
@@ -34,8 +36,7 @@ var config = {
     },
     module: {
         noParse:[],
-         rules: [
-           
+         rules: [           
             {
                 test: /\.vue$/,
                 loader: 'vue-loader',

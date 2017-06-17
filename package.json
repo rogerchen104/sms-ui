@@ -58,6 +58,8 @@
     "style-loader": "^0.17.0",
     "through2": "^2.0.0",
     "vinyl": "^1.1.0",
+    "vue-hot-reload-api": "^2.1.0",
+    "vue-html-loader": "^1.2.4",
     "vue-loader": "^12.1.0",
     "vue-template-compiler": "^2.3.3",
     "webpack": "^2.6.1",
@@ -69,7 +71,7 @@
     "start": "npm run gulp",
     "deploy": "npm run gulp deploy",
     "postinstall": "opencollective postinstall",
-    "serve": "webpack-dev-server --devtool eval --progress --colors --hot --content-base output"
+    "serve": "webpack-dev-server --devtool eval --progress --colors --hot --content-base dist"
   },
   "collective": {
     "type": "opencollective",
