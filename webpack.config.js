@@ -11,7 +11,7 @@ function resolve (dir) {
 var config = {
  
     entry: {
-       app: ['./src/app.js','./src/config/css.js'],
+       app: ['./src/main.js','./src/config/css.js'],
        vendor: ['jquery', 'metisMenu','tether','bootstrap','bootstrapToolkit','vue','vuex','vue-router']
     },
     resolve: {

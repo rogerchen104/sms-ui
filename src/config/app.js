@@ -4,7 +4,10 @@ window.$ = jquery;
 window.Vue = vue;
 console.log(jquery);
 console.log(vue);
+import Hello from '@/components/Hello'
 
+ 
+console.log(Hello);
 import ResponsiveBootstrapToolkit from 'bootstrapToolkit';
 
 var config = window.config = {};
