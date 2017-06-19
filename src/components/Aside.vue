@@ -10,112 +10,113 @@
             </div>
             <nav class="menu">
                 <ul class="nav metismenu" id="sidebar-menu">
-                    <li class="active"  v-on:click="active($event)">
-                        <a>
-                            <i class="fa fa-home"></i>儀表板
-                        </a>
+                    <li class="active" v-on:click="active($event)">
+    
+                        <router-link to="/"> <i class="fa fa-home"></i> 儀表板</router-link>
                     </li>
-                    <li  v-on:click="active($event)">
+                    <li v-on:click="active($event)">
                         <a>
                             <i class="fa fa-th-large"></i> 項目顯示
                             <i class="fa arrow"></i>
                         </a>
                         <ul>
                             <li> <a href="items-list.html">
-        								Items List
-        							</a> </li>
+            								Items List
+            							</a> </li>
                             <li> <a href="item-editor.html">
-        								Item Editor
-        							</a> </li>
+            								Item Editor
+            							</a> </li>
                         </ul>
                     </li>
-                    <li  v-on:click="active($event)">
+                    <li v-on:click="active($event)">
                         <a>
                             <i class="fa fa-bar-chart"></i> 圖表
                             <i class="fa arrow"></i>
                         </a>
                         <ul>
                             <li> <a href="charts-flot.html">
-        								Flot Charts
-        							</a> </li>
+            								Flot Charts
+            							</a> </li>
                             <li> <a href="charts-morris.html">
-        								Morris Charts
-        							</a> </li>
+            								Morris Charts
+            							</a> </li>
                         </ul>
                     </li>
-                    <li   v-on:click="active($event)">
+                    <li v-on:click="active($event)">
                         <a>
                             <i class="fa fa-table"></i> 表格
                             <i class="fa arrow"></i>
                         </a>
                         <ul>
-                            <li> <a href="static-tables.html">
-        								Static Tables
-        							</a> </li>
-                            <li> <a href="responsive-tables.html">
-        								Responsive Tables
-        							</a> </li>
+                            <li>
+                                <router-link to="/demo-static-table">靜態表格</router-link>
+                            </li>
+                            <li> 
+                                <a href="responsive-tables.html">
+            					    響應式表格
+            					</a>
+                            </li>
                         </ul>
                     </li>
-                    <li   v-on:click="active($event)">
+                    <li v-on:click="active($event)">
                         <router-link to="demo-form"> <i class="fa fa-pencil-square-o"></i>表單</router-link>
                     </li>
-                    <li   v-on:click="active($event)">
+                    <li v-on:click="active($event)">
                         <a>
                             <i class="fa fa-desktop"></i> UI元素
                             <i class="fa arrow"></i>
                         </a>
                         <ul>
-                            <li> 
-
-                                 <router-link to="demo-button"> Buttons</router-link>
-
+                            <li>
+    
+                                <router-link to="demo-button"> Buttons</router-link>
+    
                             </li>
                             <li> <a href="cards.html">
-        								Cards
-        							</a> </li>
+            								Cards
+            							</a> </li>
                             <li> <a href="typography.html">
-        								Typography
-        							</a> </li>
+            								Typography
+            							</a> </li>
                             <li> <a href="icons.html">
-        								Icons
-        							</a> </li>
+            								Icons
+            							</a> </li>
                             <li> <a href="grid.html">
-        								Grid
-        							</a> </li>
+            								Grid
+            							</a> </li>
                         </ul>
                     </li>
-                    <li   v-on:click="active($event)">
+                    <li v-on:click="active($event)">
                         <a>
                             <i class="fa fa-file-text-o"></i> 頁面
                             <i class="fa arrow"></i>
                         </a>
                         <ul>
                             <li> <a href="login.html">
-        								Login
-        							</a> </li>
+            								Login
+            							</a> </li>
                             <li> <a href="signup.html">
-        								Sign Up
-        							</a> </li>
+            								Sign Up
+            							</a> </li>
                             <li> <a href="reset.html">
-        								Reset
-        							</a> </li>
+            								Reset
+            							</a> </li>
                             <li> <a href="error-404.html">
-        								Error 404 App
-        							</a> </li>
+            								Error 404 App
+            							</a> </li>
                             <li> <a href="error-404-alt.html">
-        								Error 404 Global
-        							</a> </li>
+            								Error 404 Global
+            							</a> </li>
                             <li> <a href="error-500.html">
-        								Error 500 App
-        							</a> </li>
+            								Error 500 App
+            							</a> </li>
                             <li> <a href="error-500-alt.html">
-        								Error 500 Global
-        							</a> </li>
+            								Error 500 Global
+            							</a> </li>
                         </ul>
                     </li>
-                     <li  >
-                     <router-link to="test"> <i class="fa fa-home"></i>Route 測試</router-link>
+                    <li>
+                        <router-link to="test"> <i class="fa fa-home"></i>Route 測試</router-link>
                     </li>
                 </ul>
             </nav>
@@ -134,35 +135,35 @@
                                 <div class="row hidden-md-down">
                                     <div class="col-xs-4"> <label class="title">Sidebar:</label> </div>
                                     <div class="col-xs-4"> <label>
-        				                        <input class="radio" type="radio" name="sidebarPosition" value="sidebar-fixed" >
-        				                        <span></span>
-        				                    </label> </div>
+            				                        <input class="radio" type="radio" name="sidebarPosition" value="sidebar-fixed" >
+            				                        <span></span>
+            				                    </label> </div>
                                     <div class="col-xs-4"> <label>
-        				                        <input class="radio" type="radio" name="sidebarPosition" value="">
-        				                        <span></span>
-        				                    </label> </div>
+            				                        <input class="radio" type="radio" name="sidebarPosition" value="">
+            				                        <span></span>
+            				                    </label> </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-4"> <label class="title">Header:</label> </div>
                                     <div class="col-xs-4"> <label>
-        				                        <input class="radio" type="radio" name="headerPosition" value="header-fixed">
-        				                        <span></span>
-        				                    </label> </div>
+            				                        <input class="radio" type="radio" name="headerPosition" value="header-fixed">
+            				                        <span></span>
+            				                    </label> </div>
                                     <div class="col-xs-4"> <label>
-        				                        <input class="radio" type="radio" name="headerPosition" value="">
-        				                        <span></span>
-        				                    </label> </div>
+            				                        <input class="radio" type="radio" name="headerPosition" value="">
+            				                        <span></span>
+            				                    </label> </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-4"> <label class="title">Footer:</label> </div>
                                     <div class="col-xs-4"> <label>
-        				                        <input class="radio" type="radio" name="footerPosition" value="footer-fixed">
-        				                        <span></span>
-        				                    </label> </div>
+            				                        <input class="radio" type="radio" name="footerPosition" value="footer-fixed">
+            				                        <span></span>
+            				                    </label> </div>
                                     <div class="col-xs-4"> <label>
-        				                        <input class="radio" type="radio" name="footerPosition" value="">
-        				                        <span></span>
-        				                    </label> </div>
+            				                        <input class="radio" type="radio" name="footerPosition" value="">
+            				                        <span></span>
+            				                    </label> </div>
                                 </div>
                             </div>
                             <div class="customize-item">
@@ -195,23 +196,23 @@
                 msg: 'Welcome to Your Vue.js App'
             }
         },
-        mounted:function(){
+        mounted: function() {
             console.log('hello mounted!!');
-            $("#sidebar-menu").on('clean.active',function(e){
-                
+            $("#sidebar-menu").on('clean.active', function(e) {
+    
                 $('#sidebar-menu li').removeClass('active');
             });
         },
-        methods:{
-            test:function(e){
+        methods: {
+            test: function(e) {
                 console.log(e);
                 console.log(this.msg);
             },
-            active:function(e){
-                console.log(e.target.parentNode.parentNode);               
+            active: function(e) {
+                console.log(e.target.parentNode.parentNode);
                 $(e.target.parentNode.parentNode).trigger("clean.active");
                 $(e.target.parentNode).addClass('active');
-
+    
             }
         }
     }

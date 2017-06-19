@@ -271,29 +271,29 @@
                 <div class="col-md-6">
                     <div class="card card-block sameheight-item">
                         <div class="title-block">
-                            <h3 class="title"> Control Sizing </h3>
+                            <h3 class="title"> Bootstrap 縮放 </h3>
                         </div>
                         <form role="form">
                             <div class="form-group"> <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg"> </div>
                             <div class="form-group"> <input class="form-control" type="text" placeholder="Default input"> </div>
                             <div class="form-group"> <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"> </div>
                             <div class="form-group"> <select class="form-control form-control-lg">
-    							<option>Option one</option>
-    							<option>Option two</option>
-    							<option>Option three</option>
-    							<option>Option four</option>
+    							<option>項目一</option>
+    							<option>項目二</option>
+    							<option>項目三</option>
+    							<option>項目四</option>
     						</select> </div>
                             <div class="form-group"> <select class="form-control">
-    							<option>Option one</option>
-    							<option>Option two</option>
-    							<option>Option three</option>
-    							<option>Option four</option>
+    						    <option>項目一</option>
+    							<option>項目二</option>
+    							<option>項目三</option>
+    							<option>項目四</option>
     						</select> </div>
                             <div class="form-group"> <select class="form-control form-control-sm">
-    							<option>Option one</option>
-    							<option>Option two</option>
-    							<option>Option three</option>
-    							<option>Option four</option>
+				                <option>項目一</option>
+    							<option>項目二</option>
+    							<option>項目三</option>
+    							<option>項目四</option>
     						</select> </div>
                         </form>
                     </div>
@@ -301,7 +301,7 @@
                 <div class="col-md-6">
                     <div class="card card-block sameheight-item">
                         <div class="title-block">
-                            <h3 class="title"> Column sizing </h3>
+                            <h3 class="title"> 欄位縮放 </h3>
                         </div>
                         <form role="form">
                             <div class="row form-group">
@@ -340,7 +340,7 @@
             </div>
         </section>
         <div class="subtitle-block">
-            <h3 class="subtitle"> Form Layouts </h3>
+            <h3 class="subtitle">表單排版 </h3>
         </div>
         <section class="section">
             <div class="row sameheight-container">
@@ -359,7 +359,7 @@
                 <div class="col-md-6">
                     <div class="card card-block sameheight-item">
                         <div class="title-block">
-                            <h3 class="title"> Forms Using the Grid </h3>
+                            <h3 class="title">網格表單 </h3>
                         </div>
                         <form>
                             <div class="form-group row"> <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>
@@ -381,7 +381,7 @@
                 <div class="col-md-12">
                     <div class="card card-block sameheight-item">
                         <div class="title-block">
-                            <h3 class="title"> Inline Forms </h3>
+                            <h3 class="title"> Inline 表單 </h3>
                         </div>
                         <form class="form-inline">
                             <div class="form-group"> <label for="exampleInputEmail3">Email address</label> <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email"> </div>

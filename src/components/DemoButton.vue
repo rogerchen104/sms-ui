@@ -1,8 +1,8 @@
 <template>
     <article class="content buttons-page">
         <div class="title-block">
-            <h3 class="title"> Buttons </h3>
-            <p class="title-description"> Sample button elements </p>
+            <h3 class="title"> 按扭 </h3>
+            <p class="title-description"> 基本按扭元素 </p>
         </div>
         <section class="section">
             <div class="row sameheight-container">
