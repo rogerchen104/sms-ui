@@ -1,33 +1,32 @@
 const path = require('path')
-var webpack = require('webpack')
+const webpack = require('webpack')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const style = new ExtractTextPlugin({ filename: 'css/[name].css', allChunks: true })
 var bower_dir = __dirname + '/bower_components';
 
-function resolve (dir) {
-  return path.join(__dirname, '..', dir)
+function resolve(dir) {
+    return path.join(__dirname, '..', dir)
 }
 var config = {
- 
     entry: {
-       app: ['./src/main.js','./src/config/css.js'],
-       vendor: ['jquery', 'metisMenu','tether','bootstrap','bootstrapToolkit','vue','vuex','vue-router']
+        app: ['./src/main.js', './src/config/css.js'],
+        vendor: ['jquery', 'metisMenu', 'tether', 'bootstrap', 'bootstrapToolkit', 'vue', 'vuex', 'vue-router']
     },
     resolve: {
-        extensions: [".js", ".json",'.vue'],
+        extensions: [".js", ".json", '.vue'],
 
         alias: {
             '@': resolve('src'),
             'jquery': bower_dir + '/jquery/dist/jquery.min.js',
-            'metisMenu': bower_dir + '/metisMenu/dist/metisMenu.js',            
+            'metisMenu': bower_dir + '/metisMenu/dist/metisMenu.js',
             'tether': bower_dir + '/tether/dist/js/tether.min.js',
             'bootstrap': bower_dir + '/bootstrap/dist/js/bootstrap.min.js',
             'bootstrapToolkit': bower_dir + '/responsive-bootstrap-toolkit/dist/bootstrap-toolkit.min.js',
             'jquery-validation': bower_dir + '/jquery-validation/dist/jquery.validate.min.js',
-            'vue':bower_dir + '/vue/dist/vue.min.js',
-            'vue-router':bower_dir + '/vue-router/dist/vue-router.min.js',
-            'vuex':bower_dir + '/vuex/dist/vuex.min.js'
+            'vue': bower_dir + '/vue/dist/vue.min.js',
+            'vue-router': bower_dir + '/vue-router/dist/vue-router.min.js',
+            'vuex': bower_dir + '/vuex/dist/vuex.min.js'
         }
     },
     output: {
@@ -35,18 +34,18 @@ var config = {
         filename: 'js/[name].js'
     },
     module: {
-        noParse:[],
-         rules: [           
+        noParse: [],
+        rules: [
             {
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {
-                loaders: {
-                    css: ExtractTextPlugin.extract({
-                    use: 'css-loader',
-                    fallback: 'vue-style-loader' // <- this is a dep of vue-loader, so no need to explicitly install if using npm3
-                    })
-                }
+                    loaders: {
+                        css: ExtractTextPlugin.extract({
+                            use: 'css-loader',
+                            fallback: 'vue-style-loader' // <- this is a dep of vue-loader, so no need to explicitly install if using npm3
+                        })
+                    }
                 }
             },
             {
@@ -98,9 +97,9 @@ var config = {
             }]
     },
     plugins: [
-        
+
         new webpack.ProvidePlugin({
-            
+
             $: 'jquery', jQuery: 'jquery',
             Tether: 'tether', tether: 'tether'
         })
@@ -111,18 +110,18 @@ var config = {
                 safe: true
             }
         }),
-            new webpack.optimize.CommonsChunkPlugin({
-                names: ['vendor', 'manifest'] // Specify the common bundle's name.
-            })    ]
+        new webpack.optimize.CommonsChunkPlugin({
+            names: ['vendor', 'manifest'] // Specify the common bundle's name.
+        })]
 }
- 
 
 
 
-Object.keys( config.resolve.alias ).forEach( key => {
+
+Object.keys(config.resolve.alias).forEach(key => {
     // console.log( iterable[key] );
-        config.module.noParse.push(new RegExp('^' + key + '$'));
-});  
+    config.module.noParse.push(new RegExp('^' + key + '$'));
+});
 module.exports = config;
 // module.exports = {
 //     entry: {

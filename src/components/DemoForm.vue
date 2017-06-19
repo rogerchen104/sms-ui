@@ -17,7 +17,7 @@
                         <form role="form">
                             <div class="form-group"> <label class="control-label">文字輸入</label> <input type="text" class="form-control underlined"> </div>
                             <div class="form-group"> <label class="control-label">密碼輸入</label> <input type="password" class="form-control underlined"> </div>
-                            <div class="form-group"> <label class="control-label">提示字元輪入</label> <input type="text" class="form-control underlined" placeholder="Placeholder text"> </div>
+                            <div class="form-group"> <label class="control-label">提示字元輪入</label> <input type="text" class="form-control underlined" placeholder="提示文字輸入"> </div>
                             <div class="form-group"> <label class="control-label">唯讀輸入</label> <input type="text" disabled="disabled" class="form-control underlined" placeholder="Disabled input text"> </div>
                             <div class="form-group"> <label class="control-label">靜態顯示</label>
                                 <p class="form-control-static underlined">email@example.com</p>
@@ -57,7 +57,7 @@
                         <form>
                             <div class="form-group"> <label class="control-label">文字輸入</label> <input type="text" class="form-control boxed"> </div>
                             <div class="form-group"> <label class="control-label">密碼輸入</label> <input type="password" class="form-control boxed"> </div>
-                            <div class="form-group"> <label class="control-label">提示字元輪入</label> <input type="text" class="form-control boxed" placeholder="Placeholder text"> </div>
+                            <div class="form-group"> <label class="control-label">提示字元輪入</label> <input type="text" class="form-control boxed" placeholder="提示文字輸入"> </div>
                             <div class="form-group"> <label class="control-label">唯讀輸入</label> <input type="text" disabled="disabled" class="form-control boxed" placeholder="Disabled input text"> </div>
                             <div class="form-group"> <label class="control-label">靜態顯示</label>
                                 <p class="form-control-static boxed">email@example.com</p>
@@ -275,7 +275,7 @@
                         </div>
                         <form role="form">
                             <div class="form-group"> <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg"> </div>
-                            <div class="form-group"> <input class="form-control" type="text" placeholder="Default input"> </div>
+                            <div class="form-group"> <input class="form-control" type="text" placeholder="提示說明文字"> </div>
                             <div class="form-group"> <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"> </div>
                             <div class="form-group"> <select class="form-control form-control-lg">
     							<option>項目一</option>
