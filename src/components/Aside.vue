@@ -10,13 +10,13 @@
             </div>
             <nav class="menu">
                 <ul class="nav metismenu" id="sidebar-menu">
-                    <li class="active">
-                        <a href="index.html">
+                    <li class="active"  v-on:click="active($event)">
+                        <a>
                             <i class="fa fa-home"></i>儀表板
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li  v-on:click="active($event)">
+                        <a>
                             <i class="fa fa-th-large"></i> 項目顯示
                             <i class="fa arrow"></i>
                         </a>
@@ -29,8 +29,8 @@
         							</a> </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="">
+                    <li  v-on:click="active($event)">
+                        <a>
                             <i class="fa fa-bar-chart"></i> 圖表
                             <i class="fa arrow"></i>
                         </a>
@@ -43,8 +43,8 @@
         							</a> </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="">
+                    <li   v-on:click="active($event)">
+                        <a>
                             <i class="fa fa-table"></i> 表格
                             <i class="fa arrow"></i>
                         </a>
@@ -57,18 +57,20 @@
         							</a> </li>
                         </ul>
                     </li>
-                    <li>
+                    <li   v-on:click="active($event)">
                         <router-link to="demo-form"> <i class="fa fa-pencil-square-o"></i>表單</router-link>
                     </li>
-                    <li>
-                        <a href="">
+                    <li   v-on:click="active($event)">
+                        <a>
                             <i class="fa fa-desktop"></i> UI元素
                             <i class="fa arrow"></i>
                         </a>
                         <ul>
-                            <li> <a href="buttons.html">
-        								Buttons
-        							</a> </li>
+                            <li> 
+
+                                 <router-link to="demo-button"> Buttons</router-link>
+
+                            </li>
                             <li> <a href="cards.html">
         								Cards
         							</a> </li>
@@ -83,8 +85,8 @@
         							</a> </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="">
+                    <li   v-on:click="active($event)">
+                        <a>
                             <i class="fa fa-file-text-o"></i> 頁面
                             <i class="fa arrow"></i>
                         </a>
@@ -185,6 +187,7 @@
 </template>
 
 <script>
+    import jquery from 'jquery';
     export default {
         name: 'VAside',
         data() {
@@ -192,13 +195,23 @@
                 msg: 'Welcome to Your Vue.js App'
             }
         },
+        mounted:function(){
+            console.log('hello mounted!!');
+            $("#sidebar-menu").on('clean.active',function(e){
+                
+                $('#sidebar-menu li').removeClass('active');
+            });
+        },
         methods:{
             test:function(e){
                 console.log(e);
                 console.log(this.msg);
             },
-            aticve:function(e){
-                console.log(e);
+            active:function(e){
+                console.log(e.target.parentNode.parentNode);               
+                $(e.target.parentNode.parentNode).trigger("clean.active");
+                $(e.target.parentNode).addClass('active');
+
             }
         }
     }

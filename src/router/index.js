@@ -4,6 +4,8 @@ import Hello from '../components/Hello'
 import TestContent from '../components/TestContent'
 import VArticle from '../components/Article.vue'
 import DemoForm from '../components/DemoForm'
+import DemoButton from '../components/DemoButton'
+
 Vue.use(Router)
 
 export default new Router({
@@ -23,5 +25,10 @@ export default new Router({
       name: 'demoForm',
       component:DemoForm
     },
+    {
+      path:'/demo-button',
+      name: 'demoButton',
+      component:DemoButton
+    }
   ]
 })
