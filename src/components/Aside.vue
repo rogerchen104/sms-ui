@@ -20,27 +20,20 @@
                             <i class="fa arrow"></i>
                         </a>
                         <ul>
-                            <li> <a href="items-list.html">
-            								Items List
-            							</a> </li>
-                            <li> <a href="item-editor.html">
-            								Item Editor
-            							</a> </li>
+                            <li> 
+                                <router-link to="/demo-items-list"> 項目清單</router-link>
+                            </li>
+                            <li> 
+                                 <router-link to="/demo-items-editor"> 項目編輯</router-link>
+                            </li>
                         </ul>
                     </li>
                     <li v-on:click="active($event)">
-                        <a>
-                            <i class="fa fa-bar-chart"></i> 圖表
-                            <i class="fa arrow"></i>
-                        </a>
-                        <ul>
-                            <li> <a href="charts-flot.html">
-            								Flot Charts
-            							</a> </li>
-                            <li> <a href="charts-morris.html">
-            								Morris Charts
-            							</a> </li>
-                        </ul>
+                        
+                        <router-link to="/demo-charts"> <i class="fa fa-bar-chart"></i>圖表</router-link>
+                        <i class="fa arrow"></i>
+                    
+ 
                     </li>
                     <li v-on:click="active($event)">
                         <a>
@@ -51,10 +44,8 @@
                             <li>
                                 <router-link to="/demo-static-table">靜態表格</router-link>
                             </li>
-                            <li> 
-                                <a href="responsive-tables.html">
-            					    響應式表格
-            					</a>
+                            <li>                                 
+                                <router-link to="/demo-responsive-table">響應式表格</router-link>
                             </li>
                         </ul>
                     </li>
@@ -69,21 +60,24 @@
                         <ul>
                             <li>
     
-                                <router-link to="demo-button"> Buttons</router-link>
+                                <router-link to="demo-button"> 按鈕</router-link>
     
                             </li>
-                            <li> <a href="cards.html">
-            								Cards
-            							</a> </li>
-                            <li> <a href="typography.html">
-            								Typography
-            							</a> </li>
-                            <li> <a href="icons.html">
-            								Icons
-            							</a> </li>
-                            <li> <a href="grid.html">
-            								Grid
-            							</a> </li>
+                            <li> 
+                                <router-link to="demo-cards"> 卡片</router-link>
+
+                        
+                            </li>
+                            <li> 
+                                  <router-link to="demo-typography">文字編排</router-link>      
+                            </li>
+                            <li> 
+                                  <router-link to="demo-icons">Icons</router-link>      
+                            </li>
+
+                            <li> 
+                                <router-link to="demo-grid"> 網格</router-link>
+                             </li>
                         </ul>
                     </li>
                     <li v-on:click="active($event)">
@@ -166,16 +160,7 @@
             				                    </label> </div>
                                 </div>
                             </div>
-                            <div class="customize-item">
-                                <ul class="customize-colors">
-                                    <li> <span class="color-item color-red" data-theme="red"></span> </li>
-                                    <li> <span class="color-item color-orange" data-theme="orange"></span> </li>
-                                    <li> <span class="color-item color-green active" data-theme=""></span> </li>
-                                    <li> <span class="color-item color-seagreen" data-theme="seagreen"></span> </li>
-                                    <li> <span class="color-item color-blue" data-theme="blue"></span> </li>
-                                    <li> <span class="color-item color-purple" data-theme="purple"></span> </li>
-                                </ul>
-                            </div>
+
                         </li>
                     </ul>
                     <a href="">

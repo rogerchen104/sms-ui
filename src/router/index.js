@@ -6,6 +6,12 @@ import VArticle from '../components/Article.vue'
 import DemoForm from '../components/DemoForm'
 import DemoButton from '../components/DemoButton'
 import DemoStaticTable from '../components/demo/DemoStaticTable'
+import DemoCards from '../components/demo/DemoCards'
+import DemoGrid from '../components/demo/DemoGrid'
+import DemoIcons from '../components/demo/DemoIcons'
+import DemoItemsList from '../components/demo/DemoItemsList'
+import DemoItemEditor from '../components/demo/DemoItemEditor'
+
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +39,29 @@ export default new Router({
         path:'/demo-static-table',
       name: 'demoStaticTable',
       component:DemoStaticTable    
+    },
+    {
+        path:'/demo-cards',
+      name: 'demoCards',
+      component:DemoCards    
+    },
+    {
+        path:'/demo-grid',
+      name: 'demoGrid',
+      component:DemoGrid    
+    },
+    {
+        path:'/demo-icons',
+      name: 'demoIcons',
+      component:DemoIcons        
+    },{
+      path:'/demo-items-list',
+      name: 'demoItemsList',
+      component:DemoItemsList
+    },{
+      path:'/demo-items-editor',
+      name: 'demoItemsEditor',
+      component:DemoItemEditor
     }
   ]
 })
