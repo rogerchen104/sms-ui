@@ -26,7 +26,9 @@ var config = {
             'jquery-validation': bower_dir + '/jquery-validation/dist/jquery.validate.min.js',
             'vue': bower_dir + '/vue/dist/vue.min.js',
             'vue-router': bower_dir + '/vue-router/dist/vue-router.min.js',
-            'vuex': bower_dir + '/vuex/dist/vuex.min.js'
+            'vuex': bower_dir + '/vuex/dist/vuex.min.js',
+            'vue-resource':bower_dir + '/vue-resource/dist/vue-resource.min.js',
+            'vue-table':bower_dir + '/vuetable/dist/vue-table.min.js'
         }
     },
     output: {

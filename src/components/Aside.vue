@@ -20,20 +20,20 @@
                             <i class="fa arrow"></i>
                         </a>
                         <ul>
-                            <li> 
+                            <li>
                                 <router-link to="/demo-items-list"> 項目清單</router-link>
                             </li>
-                            <li> 
-                                 <router-link to="/demo-items-editor"> 項目編輯</router-link>
+                            <li>
+                                <router-link to="/demo-items-editor"> 項目編輯</router-link>
                             </li>
                         </ul>
                     </li>
                     <li v-on:click="active($event)">
-                        
+    
                         <router-link to="/demo-charts"> <i class="fa fa-bar-chart"></i>圖表</router-link>
                         <i class="fa arrow"></i>
-                    
- 
+    
+    
                     </li>
                     <li v-on:click="active($event)">
                         <a>
@@ -44,7 +44,7 @@
                             <li>
                                 <router-link to="/demo-static-table">靜態表格</router-link>
                             </li>
-                            <li>                                 
+                            <li>
                                 <router-link to="/demo-responsive-table">響應式表格</router-link>
                             </li>
                         </ul>
@@ -60,24 +60,24 @@
                         <ul>
                             <li>
     
-                                <router-link to="demo-button"> 按鈕</router-link>
+                                <router-link to="/demo-button"> 按鈕</router-link>
     
                             </li>
-                            <li> 
-                                <router-link to="demo-cards"> 卡片</router-link>
-
-                        
+                            <li>
+                                <router-link to="/demo-cards"> 卡片</router-link>
+    
+    
                             </li>
-                            <li> 
-                                  <router-link to="demo-typography">文字編排</router-link>      
+                            <li>
+                                <router-link to="/demo-typography">文字編排</router-link>
                             </li>
-                            <li> 
-                                  <router-link to="demo-icons">Icons</router-link>      
+                            <li>
+                                <router-link to="/demo-icons">Icons</router-link>
                             </li>
-
-                            <li> 
-                                <router-link to="demo-grid"> 網格</router-link>
-                             </li>
+    
+                            <li>
+                                <router-link to="/demo-grid"> 網格</router-link>
+                            </li>
                         </ul>
                     </li>
                     <li v-on:click="active($event)">
@@ -87,30 +87,59 @@
                         </a>
                         <ul>
                             <li> <a href="login.html">
-            								Login
-            							</a> </li>
+                								Login
+                							</a> </li>
                             <li> <a href="signup.html">
-            								Sign Up
-            							</a> </li>
+                								Sign Up
+                							</a> </li>
                             <li> <a href="reset.html">
-            								Reset
-            							</a> </li>
+                								Reset
+                							</a> </li>
                             <li> <a href="error-404.html">
-            								Error 404 App
-            							</a> </li>
+                								Error 404 App
+                							</a> </li>
                             <li> <a href="error-404-alt.html">
-            								Error 404 Global
-            							</a> </li>
+                								Error 404 Global
+                							</a> </li>
                             <li> <a href="error-500.html">
-            								Error 500 App
-            							</a> </li>
+                								Error 500 App
+                							</a> </li>
                             <li> <a href="error-500-alt.html">
-            								Error 500 Global
-            							</a> </li>
+                								Error 500 Global
+                							</a> </li>
                         </ul>
                     </li>
                     <li>
                         <router-link to="test"> <i class="fa fa-home"></i>Route 測試</router-link>
+                    </li>
+                    <li  v-on:click="active($event)">
+                        <a>
+                            <i class="fa fa-file-text-o"></i> SMS頁面
+                            <i class="fa arrow"></i>
+                        </a>
+                          <ul>
+                            <li>
+    
+                                <router-link to="/sms/auth-setting">帳號權限設定</router-link>
+    
+                            </li>
+                             <li>
+                                <router-link to="/demo-button">廠商資料維護</router-link>
+    
+                            </li>
+                            <li>
+                                 <router-link to="/demo-button">發送代碼維護</router-link>
+                            </li>
+                             <li>
+                                 <router-link to="/demo-button">發送排程設定</router-link>
+                            </li>
+                             <li>
+                                 <router-link to="/demo-button">活動記錄</router-link>
+                            </li>
+                            <li>
+                                 <router-link to="/demo-button">報表</router-link>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -129,38 +158,38 @@
                                 <div class="row hidden-md-down">
                                     <div class="col-xs-4"> <label class="title">Sidebar:</label> </div>
                                     <div class="col-xs-4"> <label>
-            				                        <input class="radio" type="radio" name="sidebarPosition" value="sidebar-fixed" >
-            				                        <span></span>
-            				                    </label> </div>
+                				                        <input class="radio" type="radio" name="sidebarPosition" value="sidebar-fixed" >
+                				                        <span></span>
+                				                    </label> </div>
                                     <div class="col-xs-4"> <label>
-            				                        <input class="radio" type="radio" name="sidebarPosition" value="">
-            				                        <span></span>
-            				                    </label> </div>
+                				                        <input class="radio" type="radio" name="sidebarPosition" value="">
+                				                        <span></span>
+                				                    </label> </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-4"> <label class="title">Header:</label> </div>
                                     <div class="col-xs-4"> <label>
-            				                        <input class="radio" type="radio" name="headerPosition" value="header-fixed">
-            				                        <span></span>
-            				                    </label> </div>
+                				                        <input class="radio" type="radio" name="headerPosition" value="header-fixed">
+                				                        <span></span>
+                				                    </label> </div>
                                     <div class="col-xs-4"> <label>
-            				                        <input class="radio" type="radio" name="headerPosition" value="">
-            				                        <span></span>
-            				                    </label> </div>
+                				                        <input class="radio" type="radio" name="headerPosition" value="">
+                				                        <span></span>
+                				                    </label> </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-4"> <label class="title">Footer:</label> </div>
                                     <div class="col-xs-4"> <label>
-            				                        <input class="radio" type="radio" name="footerPosition" value="footer-fixed">
-            				                        <span></span>
-            				                    </label> </div>
+                				                        <input class="radio" type="radio" name="footerPosition" value="footer-fixed">
+                				                        <span></span>
+                				                    </label> </div>
                                     <div class="col-xs-4"> <label>
-            				                        <input class="radio" type="radio" name="footerPosition" value="">
-            				                        <span></span>
-            				                    </label> </div>
+                				                        <input class="radio" type="radio" name="footerPosition" value="">
+                				                        <span></span>
+                				                    </label> </div>
                                 </div>
                             </div>
-
+    
                         </li>
                     </ul>
                     <a href="">

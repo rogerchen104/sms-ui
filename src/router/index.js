@@ -11,6 +11,8 @@ import DemoGrid from '../components/demo/DemoGrid'
 import DemoIcons from '../components/demo/DemoIcons'
 import DemoItemsList from '../components/demo/DemoItemsList'
 import DemoItemEditor from '../components/demo/DemoItemEditor'
+import VbDemoComponentPage from '../components/demo/vb/VbDemoComponentPage'
+import SmsAuthSetting from '../components/sms/AuthSetting'
 
 Vue.use(Router)
 
@@ -62,6 +64,14 @@ export default new Router({
       path:'/demo-items-editor',
       name: 'demoItemsEditor',
       component:DemoItemEditor
+    },{
+      path:'/demo-component-page',
+      name: 'VbDemoComponentPage',
+      component:VbDemoComponentPage
+    },{
+      path:'/sms/auth-setting',
+      name: 'SmsAuthSetting',
+      component: SmsAuthSetting
     }
   ]
 })

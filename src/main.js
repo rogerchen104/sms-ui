@@ -12,11 +12,15 @@
 // })
 
 import Vue from 'vue';
+import BootstrapVue from 'bootstrap-vue';
 import VueRouter from 'vue-router';
 import router from './router/index';
 const App = require('./App.vue');
-
+ 
 Vue.use(VueRouter);
+Vue.use(BootstrapVue);
+ 
+ 
  new Vue({
     el: '#app',
     router: router,

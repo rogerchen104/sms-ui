@@ -1,0 +1,13 @@
+ 
+.modal-backdrop.fade {
+    opacity: 0.44;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity .15s linear;
+}
+
+.modal.fade .modal-dialog{
+    transform: translateY(0%);
+}

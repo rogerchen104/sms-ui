@@ -24,7 +24,9 @@
     "vue": "^2.3.4",
     "vue-router": "^2.5.3",
     "vuex": "^2.3.0",
-    "vue-sweetalert": "git://github.com/lishengzxc/vue-sweetalert.git#^0.1.17"
+    "vue-sweetalert": "git://github.com/lishengzxc/vue-sweetalert.git#^0.1.17",
+    "bootstrap-vue": "git://github.com/bootstrap-vue/bootstrap-vue.git#^0.16.1",
+    "vuetable": "^1.5.12"
   },
   "overrides": {
     "bootstrap": {
